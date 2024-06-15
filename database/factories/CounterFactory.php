@@ -14,8 +14,8 @@ class CounterFactory extends Factory
     public function definition()
     {
         return [
-            'value' => $this->faker->numberBetween(1, 20),
-            'date' => $this->faker->date('Y-m-d'),
+            // 'value' => $this->faker->numberBetween(1, 20),
+            // 'date' => $this->faker->date('Y-m-d'),
         ];
     }
 }

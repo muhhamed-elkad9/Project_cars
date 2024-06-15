@@ -22,10 +22,14 @@ class ProductController extends Controller
 
 
         foreach ($counters as $counter) {
-            $counter_value = $counter->value;
+            if (isset($counter->value)) {
+                $counter_value = $counter->value;
+            } else {
+                $counter_value = 0;
+            }
         }
 
-        return view('product.index', compact('products', 'counter_value'));
+        return view('product.index', compact('products'))->with('counter_value',);
     }
 
     public function create()

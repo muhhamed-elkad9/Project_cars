@@ -83,7 +83,7 @@
                                                         @endforeach
 
 
-                                                        <tr class="{{ $isExpired ? 'table-danger' : '' }}">
+                                                        <tr class="{{ $isExpired ? 'table-danger' : 'table-success' }}">
                                                             <td>{{ $loop->iteration }}</td>
                                                             <td>{{ $product->product_name }}</td>
                                                             <td>{{ $product->product_date_day }} يوم</td>

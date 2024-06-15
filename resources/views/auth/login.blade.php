@@ -58,7 +58,7 @@ login-->
                     </div>
                     <div class="col-lg-4 col-md-6 bg-white">
                         <div class="login-fancy pb-40 clearfix">
-                            <h3 style="font-family: 'Cairo', sans-serif" class="mb-30">تسجيل دخول ادمن</h3>
+                            <h3 style="font-family: 'Cairo', sans-serif" class="mb-30">تسجيل دخول</h3>
 
                             @if (\Session::has('message'))
                                 <div class="alert alert-danger">

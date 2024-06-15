@@ -178,7 +178,7 @@
 
     function currentValue() {
         var carValue = document.getElementById('car_value_buy').value;
-        var carAge = document.getElementById('car_age').value * 365;
+        var carAge = document.getElementById('car_age').value;
 
         if (carAge !== null && carValue !== null) {
             var currentValue = carValue / carAge;
