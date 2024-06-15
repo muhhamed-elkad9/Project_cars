@@ -36,10 +36,11 @@ Route::group(['namespace' => 'Auth'], function () {
 
 Route::middleware(['auth:web'])->group(function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-    Route::get('/', function () {
-        return view('dashboard');
-    });
+    // Route::get('/', function () {
+    //     return view('dashboard');
+    // });
 
 
     Route::group(['prefix' => 'users'], function () {
