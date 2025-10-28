@@ -14,9 +14,9 @@ class ProductFactory extends Factory
     public function definition()
     {
         return [
-            // 'product_name' => $this->faker->name(),
-            // 'product_date_day' => $this->faker->numberBetween(1, 20),
-            // 'product_date_distance' => $this->faker->numberBetween(1, 20),
+            'product_name' => $this->faker->name(),
+            'product_date_day' => $this->faker->numberBetween(1, 20),
+            'product_date_distance' => $this->faker->numberBetween(1, 20),
         ];
     }
 }

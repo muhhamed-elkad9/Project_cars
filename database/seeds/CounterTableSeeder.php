@@ -14,6 +14,6 @@ class CounterTableSeeder extends Seeder
      */
     public function run()
     {
-        // Counter::factory()->count(10)->create();
+        Counter::factory()->count(10)->create();
     }
 }
